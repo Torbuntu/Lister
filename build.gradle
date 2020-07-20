@@ -1,0 +1,23 @@
+plugins{
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+javafx {
+    version = "14"
+    modules = [ 'javafx.controls', 'javafx.graphics', 'javafx.fxml' ]
+}
+
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:3.32.3'
+}
+
+mainClassName = "$moduleName/com.github.torbuntu.Lister"

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.torbuntu.ControllerSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-07-10T17:55:14" hostname="toolbox" time="0.737">
+  <properties/>
+  <testcase name="btnClick sets the label's text " classname="com.github.torbuntu.ControllerSpec" time="0.737">
+    <failure message="java.lang.ExceptionInInitializerError" type="java.lang.ExceptionInInitializerError">java.lang.ExceptionInInitializerError
+	at org.objenesis.instantiator.sun.SunReflectionFactoryInstantiator.newInstance(SunReflectionFactoryInstantiator.java:48)
+	at org.objenesis.ObjenesisBase.newInstance(ObjenesisBase.java:73)
+	at org.objenesis.ObjenesisHelper.newInstance(ObjenesisHelper.java:44)
+	at org.spockframework.mock.runtime.MockInstantiator$ObjenesisInstantiator.instantiate(MockInstantiator.java:45)
+	at org.spockframework.mock.runtime.MockInstantiator.instantiate(MockInstantiator.java:31)
+	at org.spockframework.mock.runtime.ByteBuddyMockFactory.createMock(ByteBuddyMockFactory.java:73)
+	at org.spockframework.mock.runtime.ProxyBasedMockFactory.create(ProxyBasedMockFactory.java:42)
+	at org.spockframework.mock.runtime.JavaMockFactory.createInternal(JavaMockFactory.java:58)
+	at org.spockframework.mock.runtime.JavaMockFactory.create(JavaMockFactory.java:38)
+	at org.spockframework.mock.runtime.CompositeMockFactory.create(CompositeMockFactory.java:42)
+	at org.spockframework.lang.SpecInternals.createMock(SpecInternals.java:47)
+	at org.spockframework.lang.SpecInternals.createMockImpl(SpecInternals.java:302)
+	at org.spockframework.lang.SpecInternals.createMockImpl(SpecInternals.java:292)
+	at org.spockframework.lang.SpecInternals.MockImpl(SpecInternals.java:101)
+	at com.github.torbuntu.ControllerSpec.btnClick sets the label's text (ControllerSpec.groovy:32)
+Caused by: java.lang.IllegalStateException: Toolkit not initialized
+	at com.sun.javafx.application.PlatformImpl.runLater(PlatformImpl.java:410)
+	at com.sun.javafx.application.PlatformImpl.runLater(PlatformImpl.java:405)
+	at com.sun.javafx.application.PlatformImpl.setPlatformUserAgentStylesheet(PlatformImpl.java:695)
+	at com.sun.javafx.application.PlatformImpl.setDefaultPlatformUserAgentStylesheet(PlatformImpl.java:657)
+	at javafx.scene.control.Control.&lt;clinit&gt;(Control.java:99)
+	... 15 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
